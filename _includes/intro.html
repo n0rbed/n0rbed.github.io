@@ -10,14 +10,13 @@
   <h3 class="intro__contact">
     <span>Get in touch </span>
     <span class="emoji pointer"></span>
-    <div>
     {% for link in site.social %}
-    <a href="{{link.url}}" target="_blank" title="{{link.title}}">
-      <span class="text">{{link.title}}</span>
-      <img src="{{site.baseurl}}/img/social/{{link.title}}.svg" alt="{{link.title}}">
-    </a>
+    <span>
+      <a href="{{link.url}}" target="_blank" class="highlight-link">
+       <span class="text">{{link.title}}</span>
+     </a>
+    </span>
     {% endfor %}
-  <div>
   </h3>
 
 </header>
